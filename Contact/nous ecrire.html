@@ -1,0 +1,59 @@
+<!DOCTYPE.html>
+<html lang=fr>
+
+	<head>
+		<title>AMGCIT, Nous ecrire</title>
+        <meta charset="UTF-8">
+        <meta name="Nous ecrire" content="AMGC, un savoir-faire et 20 ans d'experience à votre service">
+    </head>
+    <body>
+        <form id="contact" method="post" action="traitement_formulaire.php">
+
+            <fieldset>
+                <legend>Civilité :</legend>
+                <div>                                     
+                    <input type="radio" name="Civilite" id="masculin">
+                    <label for="masculin">Masculin</label>
+                    <br>
+                    <input type="radio" name="Civilite" id="feminin">
+                    <label for="feminin">feminin</label>
+                    <br>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Vos coordonnées :</legend>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <br>
+                    <input type="text" id="nom" name="nom">
+                    <br>
+                    <label for="email">Email :</label>
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="votre adresse @" required>                
+            </div>
+            </fieldset>
+         
+            <fieldset>
+                <legend>Votre message :</legend>
+                <div>
+                    <label for="objet">Objet :</label>
+                    <br>
+                    <input type="text" id="objet" name="objet">
+                    <br>
+                    <label for="message">Message :</label>
+                    <br>
+                    <textarea id="message" name="message" cols="30" rows="8" required></textarea>               
+            </div>
+            </fieldset>
+
+            <div>
+                <input type="submit" name="envoi" value="Envoyer le formulaire !">
+            </div>
+            
+        </form>  
+        
+        <a href="../index.html" title="Revenir au menu">Revenir au menu</a>
+        
+    </body>
+</html>
